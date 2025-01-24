@@ -6,6 +6,10 @@ public interface TTTModel {
 
     boolean isEmpty(int row, int col);
 
-    void placePieceAt(int row, int col);
+    // Should return true if the piece was successfully placed
+    boolean placePieceAt(int row, int col);
+
+    // Returns the current player numbers turn
+    int getPlayerNum();
 
 }
