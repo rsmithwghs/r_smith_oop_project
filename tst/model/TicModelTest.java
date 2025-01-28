@@ -27,6 +27,6 @@ class TicModelTest {
     public void test_getPieceAt_returnPiece(){
         TicModel model3 = new TicModel();
         model3.placePieceAt(1,1);
-        
+        assert
     }
 }
