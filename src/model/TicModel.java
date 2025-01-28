@@ -1,6 +1,7 @@
 package model;
 
 public class TicModel extends ATTTModel {
+    private int turn = 1;
     @Override
     public char getPieceAt(int row, int col) {
         return board[row][col];
@@ -13,12 +14,16 @@ public class TicModel extends ATTTModel {
 
     @Override
     public boolean placePieceAt(int row, int col) {
-
-        return false;
+        board[row][col] = 'x';
+        if (board[row][col] != '-'){
+            return false;
+        }
+        turn ++;
+        return true;
     }
 
     @Override
     public int getPlayerNum() {
-        return 0;
+        return turn;
     }
 }

@@ -16,4 +16,17 @@ class TicModelTest {
             }
         }
     }
+    @Test
+    public void test_placePieceAt_placesX(){
+        TicModel model2 = new TicModel();
+        model2.placePieceAt(1,1);
+        assertNotEquals('-', model2.board[1][1]);
+        assertFalse(model2.placePieceAt(1,1));
+    }
+    @Test
+    public void test_getPieceAt_returnPiece(){
+        TicModel model3 = new TicModel();
+        model3.placePieceAt(1,1);
+        
+    }
 }
