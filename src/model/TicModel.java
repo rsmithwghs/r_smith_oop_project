@@ -14,13 +14,16 @@ public class TicModel extends ATTTModel {
 
     @Override
     public boolean placePieceAt(int row, int col) {
+
+        if (board[row][col] != '-') {
+            return false;
+        }
         board[row][col] = 'x';
         if (turn % 2 == 0){
             board[row][col] = 'o';
         }
-        if (board[row][col] != '-'){
-            return false;
-        }
+
+
         turn ++;
         return true;
     }
