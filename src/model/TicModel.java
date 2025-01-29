@@ -1,7 +1,7 @@
 package model;
 
 public class TicModel extends ATTTModel {
-    private int turn = 1;
+    public int turn = 1;
     @Override
     public char getPieceAt(int row, int col) {
         return board[row][col];

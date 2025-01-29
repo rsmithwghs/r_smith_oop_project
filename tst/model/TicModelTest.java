@@ -27,6 +27,12 @@ class TicModelTest {
     public void test_getPieceAt_returnPiece(){
         TicModel model3 = new TicModel();
         model3.placePieceAt(1,1);
-        assert
+        assertNotEquals('-', model3.getPieceAt(1,1));
+    }
+    @Test
+    public void test_getPlayerNum_getTurn(){
+        TicModel model4 = new TicModel();
+        model4.getPlayerNum();
+        assertEquals(1, model4.turn);
     }
 }
