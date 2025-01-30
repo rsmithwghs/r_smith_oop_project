@@ -7,7 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class TicControllerTest {
 
     @Test
-    void getPieceAt() {
+    void test_getPieceAt_return_Piece() {
+        TicController cont1 = new TicController();
+        
     }
 
     @Test

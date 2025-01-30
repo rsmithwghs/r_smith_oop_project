@@ -5,7 +5,7 @@ import model.TicModel;
 public class TicController implements TTTController {
     private TicModel model;
     public int turn = model.turn;
-    public TicController(TicModel model){
+    public TicController(){
         this.model = model;
 
     }
