@@ -9,7 +9,7 @@ class TicControllerTest {
     @Test
     void test_getPieceAt_return_Piece() {
         TicController cont1 = new TicController();
-        
+
     }
 
     @Test

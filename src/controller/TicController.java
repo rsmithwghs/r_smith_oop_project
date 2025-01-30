@@ -16,7 +16,8 @@ public class TicController implements TTTController {
 
     @Override
     public boolean placePieceAt(int row, int col) {
-        return model.placePieceAt(row, col);
+        model.placePieceAt(row, col);
+        
     }
 
     @Override
