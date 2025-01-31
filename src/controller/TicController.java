@@ -3,10 +3,9 @@ package controller;
 import model.TicModel;
 
 public class TicController implements TTTController {
-    private TicModel model;
+    TicModel model;
     public int turn = model.turn;
     public TicController(){
-        this.model = model;
 
     }
     @Override
@@ -16,7 +15,7 @@ public class TicController implements TTTController {
 
     @Override
     public boolean placePieceAt(int row, int col) {
-        model.placePieceAt(row, col);
+        return model.placePieceAt(row, col);
         
     }
 
