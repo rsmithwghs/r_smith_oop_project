@@ -4,9 +4,10 @@ import model.TicModel;
 
 public class TicController implements TTTController {
     TicModel model;
-    public int turn = model.turn;
-    public TicController(){
 
+    public TicController(TicModel model){
+        this.model = model;
+        int turn = model.getPlayerNum();
     }
     @Override
     public char getPieceAt(int row, int col) {
@@ -26,8 +27,7 @@ public class TicController implements TTTController {
 
     @Override
     public int getPlayerNum() {
-
-        return turn;
+        return model.getPlayerNum();
     }
 
     @Override
