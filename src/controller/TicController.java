@@ -39,6 +39,12 @@ public class TicController implements TTTController {
 
     @Override
     public int getPlayerNum() {
+        if(model.getPlayerNum() % 2 == 1){
+            return 1;
+        }
+        if(model.getPlayerNum() % 2 == 0){
+            return 2;
+        }
         return model.getPlayerNum();
     }
 
