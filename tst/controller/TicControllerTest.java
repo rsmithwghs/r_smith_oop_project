@@ -30,4 +30,16 @@ class TicControllerTest {
         cont3.getPlayerNum();
         assertEquals(1,cont3.getPlayerNum());
     }
+    @Test
+    public void test_isGameOver_endGame(){
+        TicModel model4 = new TicModel();
+        TicController cont4 = new TicController(model4);
+        for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 3; j++){
+                cont4.placePieceAt(i,j);
+            }
+
+        }
+        assertTrue(cont4.isGameOver());
+    }
 }
