@@ -28,6 +28,7 @@ public class TicView {
             }
             System.out.println(); // More spacing
             // Ask where the player wants to place a piece.
+            System.out.println("NOTE: SPOTS ARE NUMBERED ON ARRAY-INDEXES (0-2) ");
             System.out.print("Player " + cont.getPlayerNum() + ", choose where you want to lay your stone. Input your row then column.");
             int row = input.nextInt(); // Get both the row and the column.
             int col = input.nextInt();
