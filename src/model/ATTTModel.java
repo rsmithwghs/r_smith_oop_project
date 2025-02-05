@@ -3,9 +3,9 @@ package model;
 import java.util.Arrays;
 
 public abstract class ATTTModel implements TTTModel {
-    public double[][] board;
+    //public double[][] board;
     // '-' means that the space is empty.  You decide what player 1 and 2 is.
-    protected char[][] board;
+    public char[][] board;
 
     protected ATTTModel() {
         board = new char[3][3];
