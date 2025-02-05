@@ -4,6 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * TicModelTest
+ * Tests the TicModel.
+ * All tests passed as of 2-4-2025.
+ */
 class TicModelTest {
 
     @Test

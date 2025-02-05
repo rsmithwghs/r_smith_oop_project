@@ -5,6 +5,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * TicControllerTest
+ * Tests the TicController
+ * All 5 tests passed as of 2-4-2025
+ */
 class TicControllerTest {
 
     @Test
