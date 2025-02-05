@@ -55,13 +55,29 @@ public class TicController implements TTTController {
             }
         }
         for (int j = 0; j < 3; j++){
-            if (model.board[j][0] == model.board[j][1] && model.board[j][0] == model.board[j][2]){
-                if (model.board[j][0] == 'x'){
+            if (model.board[0][j] == model.board[1][j] && model.board[0][j] == model.board[2][j]){
+                if (model.board[0][j] == 'x'){
                     return 1;
                 }
-                if (model.board[j][0] == 'o'){
+                if (model.board[0][j] == 'o'){
                     return 2;
                 }
+            }
+        }
+        if (model.board[0][0] == model.board[1][1] && model.board[1][1] == model.board[2][2]){
+            if (model.board[0][0] == 'x'){
+                return 1;
+            }
+            if (model.board[0][0] == 'o'){
+                return 2;
+            }
+        }
+        if (model.board[0][2] == model.board[1][1] && model.board[1][1] == model.board[2][0]){
+            if (model.board[0][2] == 'x'){
+                return 1;
+            }
+            if (model.board[0][2] == 'o'){
+                return 2;
             }
         }
         return 0;
